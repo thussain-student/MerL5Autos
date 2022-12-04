@@ -1,0 +1,16 @@
+﻿body{
+  margin: 0;
+  padding: 0;
+}
+
+.header1{
+    text-align: center;
+}
+
+.header2{
+      padding-left: 105px;
+    padding-top: 20px;
+}
+.paragraphs {
+    padding: 50px 100px 50px 100px;
+}

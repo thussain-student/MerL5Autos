@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/nav.css" type="text/css" rel="stylesheet" />
+    <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+    <link href="styles/ssdn.css" type="text/css" rel="stylesheet" />
+    <link href="styles/footer.css" type="text/css" rel="stylesheet" />
+    <title>SSDN</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="navigation">
+      <div class="navigation-item">
+        <div class="logo">
+          <a href="index.html">
+            <img class="img" src="images/logo.png" />
+          </a>
+        </div>
+      </div>
+      <div class="navigation-item">
+        <div class="item">
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+      <div class="navigation-item">
+        <div class="item">
+          <a href="profile.html">Profile</a>
+        </div>
+      </div>
+      <div class="navigation-item">
+        <div class="item">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contents -->
+    <div class="header1">
+      <h1>Memory safety</h1>
+    </div>
+
+    <div class="paragraphs">
+      <p>
+        Memory safety is the process to use the memory in a way that it does not
+        create any problem as if we don't care about the safety of the memory
+        while doing our programming then it will cause programs to crash
+        unexpectedly and the program will do an intended behavior.
+      </p>
+      <p><br /></p>
+      <p>
+        Some of the programming languages has built in memory safety mechanism
+        like Java, Rust, C#, Python and Javascript and some of them don't have
+        memory safery mechanism like C, C++ and assembly.
+      </p>
+      <p><br /></p>
+      <p>
+        Memory safety is a very big issue in software products and many
+        researched shows that many vulnerabilites are because of memory safety
+        like Microsoft estimate that 70% vulnerabiliites in their products over
+        the last 10 years are just caused by memory safety issue. Google also
+        mension that 90% of the Android vulnerablities are caused by this. So
+        from the Secure Software development memoty safety is the main focus.
+      </p>
+      <p><br /></p>
+    </div>
+
+    <div class="header1">
+      <h1>Types of Memoty Safery Bugs</h1>
+    </div>
+
+    <div class="header2">
+      <h2>Out of Bounds Reads and Writes</h2>
+    </div>
+    <div class="paragraphs">
+      <p>
+        Out of bounds reads means that we try to read the memory location which
+        we are not supposed to read let me explain this with example. Let's
+        consider we have a to do list with ten items if we ask for the eleventh
+        item then? yes we should receive an error and same should happen if we
+        try to get the memory position less than 0. But the issue is the
+        programming language which is not memory safe will not thorow an error
+        and it will let you do this and this is dangrous because if you try to
+        get the 11th item that may be contain some other data or may be that
+        will be the 1st item of other to do list.
+      </p>
+      <p><br /></p>
+      <p>
+        The same is out of bounds write if there is no memory safety then you
+        will write to wrong location of memory and may overwrite some ones else
+        data in memory so that's why memory safety is the important part in
+        secure software developmenmt.
+      </p>
+      <p><br /></p>
+    </div>
+
+    <div class="header2">
+      <h2>Use After Free</h2>
+    </div>
+
+    <div class="paragraphs">
+      <p>
+        Use after free bug means that we deleted some data in a memeory but
+        again we try to get that data now if we don't use memory safe
+        mechanism/language then we will get the data but a wrong data because we
+        have already deleted our data but that location may contain some other
+        data. Like if we delete the to do list and we requiest to get the 5th
+        item so that one is deleted but still we will get data from that memeory
+        location and if we use memory safe language then it will thorow an
+        error.
+      </p>
+      <p><br /></p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="contents">
+        <label>© 2022 MerL5Autos. All rights reserved.</label>
+      </div>
+    </div>
+  </body>
+</html>

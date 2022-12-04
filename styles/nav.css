@@ -1,0 +1,29 @@
+
+.navigation{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+margin-bottom: 60px;
+}
+
+.navigation-item{
+  padding: 50px 20px;
+}
+
+.logo img{
+  height: 50px;
+}
+
+.navigation-item .item a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-item .item{
+  padding-top: 14px;
+} 
+
+.navigation-item .item label{
+  color: white;
+} 
